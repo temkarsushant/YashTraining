@@ -1,8 +1,10 @@
 package com.yash.oops;
 
-import java.lang.reflect.Array;
+import java.util.logging.Logger;
 
 public class TrainingClient {
+	static Logger log = Logger.getLogger(TrainingClient.class.getName());
+
 	public static void main(String[] args) {
 
 		JavaTraining jt = new JavaTraining();
@@ -63,24 +65,24 @@ public class TrainingClient {
 		for (int i = 0; i < jtArray.length; i++) {
 			System.out.println(jtArray[i]);
 		}
-		
 
 //		Check private data members are accessible outside the class through public method
 
 		JavaTraining jtAccess = new JavaTraining();
 
 		jtAccess.setAttribute(16, "Yes", "Yes", "Yes", "Sushant", "Yes", "Yes");
-		
-		System.out.println("Private datamembers using public method"+jtAccess);
-		
+
+		System.out.println("Private datamembers using public method" + jtAccess);
 
 //		System.out.println(JavaTraining.projector);
-		
-		SpringTraining st=new SpringTraining();
+
+		SpringTraining st = new SpringTraining();
 		st.setAttribute(101, "Test", "Test", "Test", "Test", "Test", "Test", "Test");
-		
-		System.out.println("Method Overriding : "+st);
-		
+
+		System.out.println("Method Overriding : " + st);
+
+		log.info("Log4J is working");
+
 //		System.out.println("Super Keyword : ");
 	}
 }
