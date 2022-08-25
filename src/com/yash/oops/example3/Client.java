@@ -23,6 +23,6 @@ public class Client {
 		
 		
 		System.out.println(cas12);
-		
+	
 	}
 }

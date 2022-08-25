@@ -1,9 +1,12 @@
 package com.yash.oops;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.logging.Logger;
 
 public class TrainingClient {
-	static Logger log = Logger.getLogger(TrainingClient.class.getName());
+	static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TrainingClient.class.getName());
 
 	public static void main(String[] args) {
 
@@ -83,6 +86,28 @@ public class TrainingClient {
 
 		log.info("Log4J is working");
 
+		try {
+			System.out.println("Test Multicatch Exception");
+		} catch (ArithmeticException | NumberFormatException e) {
+			e.printStackTrace();
+		}
+		
+		String path="C:\\Users\\sushant.temkar\\Desktop";
+		try {
+			readFirstLineFromFile(path);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
 //		System.out.println("Super Keyword : ");
+	}
+	
+	static String readFirstLineFromFile(String path) throws IOException {
+	    try (FileReader fr = new FileReader(path);
+	         BufferedReader br = new BufferedReader(fr)) {
+	        return br.readLine();
+	    }
 	}
 }
