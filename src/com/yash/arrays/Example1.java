@@ -23,4 +23,9 @@ public class Example1 {
 		}
 
 	}
+	
+	private void syso() {
+		// TODO Auto-generated method stub
+
+	}
 }
