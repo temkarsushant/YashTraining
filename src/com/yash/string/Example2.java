@@ -1,37 +1,37 @@
 package com.yash.string;
 
+import java.util.Scanner;
+
 public class Example2 {
 	public static void main(String[] args) {
 
-		int a = 65;
-		int b = 90;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string:");
+		String str = in.nextLine();
+		str = str.toLowerCase();
+		int len = str.length();
 
-		String s1 = "Sushant";
-		char[] temp = s1.toCharArray();
-
-		int tempInt1 = 0;
-		int tempInt2 = 0;
-
-		String s2 = new String();
-		String temp3 = new String();
-
-		for (int i = 0; i < s1.length() - 1; i++) {
-
-			tempInt1 = temp[i];
-			for (int j = i + 1; j < s1.length() - 1; j++) {
-				tempInt2 = temp[j];
-
-				if (tempInt1 > tempInt2) {
-					temp3 = Character.toString(tempInt2);
-					// s2=s2+Character.toString(tempInt2);
-				} else {
-					temp3 = Character.toString(tempInt1);
-					// s2=s2+Character.toString(tempInt1);
+		String sortedStr = ""; // Empty String
+		for (char ch = 'a'; ch <= 'z'; ch++) {
+			for (int i = 0; i < len; i++) {
+				char strCh = str.charAt(i);
+				if (ch == strCh) {
+					sortedStr += strCh;
 				}
 			}
-			s2 = s2 + temp3;
-			temp3 = null;
 		}
-		System.out.println(s2);
+
+		System.out.println("Ascending order:");
+		System.out.println(sortedStr);
+
+		char rev[] = sortedStr.toCharArray();
+		StringBuffer descOrder = new StringBuffer();
+
+		for (int i = rev.length - 1; i >= 0; i--) {
+			descOrder.append(rev[i]);
+		}
+		System.out.println("Descending order:");
+		System.out.println(descOrder.toString());
+
 	}
 }
