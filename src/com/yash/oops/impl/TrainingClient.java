@@ -1,9 +1,13 @@
-package com.yash.oops;
+package com.yash.oops.impl;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Logger;
+
+import com.yash.oops.pojo.JavaTraining;
+import com.yash.oops.pojo.SpringTraining;
+import com.yash.oops.utility.ChairNoComparator;
 
 public class TrainingClient {
 	static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TrainingClient.class.getName());

@@ -1,4 +1,4 @@
-package com.yash.oops;
+package com.yash.oops.pojo;
 //Sushant Temkar
 
 //This is pojo class for specifying training attributes.

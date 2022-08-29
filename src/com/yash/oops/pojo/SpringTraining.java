@@ -1,4 +1,4 @@
-package com.yash.oops;
+package com.yash.oops.pojo;
 
 public class SpringTraining extends JavaTraining {
 	private int chairNo;

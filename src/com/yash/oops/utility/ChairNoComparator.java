@@ -1,6 +1,8 @@
-package com.yash.oops;
+package com.yash.oops.utility;
 
 import java.util.Comparator;
+
+import com.yash.oops.pojo.JavaTraining;
 
 public class ChairNoComparator implements Comparator<JavaTraining> {
 
