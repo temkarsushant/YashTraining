@@ -1,4 +1,4 @@
-package com.yash.oops.exceptionhandling.examle3;
+package com.yash.exceptionhandling.examle3;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

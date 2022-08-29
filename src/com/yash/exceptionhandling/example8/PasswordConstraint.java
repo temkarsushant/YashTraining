@@ -1,4 +1,4 @@
-package com.yash.oops.exceptionhandling.example8;
+package com.yash.exceptionhandling.example8;
 
 import java.util.regex.Pattern;
 

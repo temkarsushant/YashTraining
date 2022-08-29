@@ -1,4 +1,4 @@
-package com.yash.oops.exceptionhandling.example5;
+package com.yash.exceptionhandling.example5;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

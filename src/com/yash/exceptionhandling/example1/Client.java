@@ -1,4 +1,4 @@
-package com.yash.oops.exceptionhandling.example1;
+package com.yash.exceptionhandling.example1;
 
 public class Client {
 

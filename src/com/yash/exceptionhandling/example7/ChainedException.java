@@ -1,4 +1,4 @@
-package com.yash.oops.exceptionhandling.example7;
+package com.yash.exceptionhandling.example7;
 
 import java.io.IOException;
 
