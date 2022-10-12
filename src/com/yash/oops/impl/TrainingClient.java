@@ -3,16 +3,41 @@ package com.yash.oops.impl;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.logging.Logger;
+import java.util.Properties;
+
+import org.apache.log4j.BasicConfigurator;
 
 import com.yash.oops.pojo.JavaTraining;
 import com.yash.oops.pojo.SpringTraining;
 import com.yash.oops.utility.ChairNoComparator;
 
 public class TrainingClient {
+	
+//    FileReader reader=new FileReader("C:\\Users\\sushant.temkar\\git\\YashTraining\\Reaources\\log4j.properties");  
+//    Properties p=new Properties();  
+//   
+//    p.load(reader);  
+//    String log4jConfPath =" C:\\Users\\sushant.temkar\\git\\YashTraining\\Reaources\\log4j.properties";
+//   
+//    
+//    Properties pp = new Properties();
+//    
+//    props.load(new FileInputStream(log4jConfPath));
+//    props.setProperty("log4j.appender.File.File", "Folder where you want to store log files/" + "File Name");
+//    
+//    Properties p = new Properties();
+//    InputStream is = getClass().getClassLoader().getResourceAsStream(log4jConfPath);
+//    p.load(is);
+    
 	static org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(TrainingClient.class.getName());
-
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		
+//	    FileReader reader=new FileReader("C:\\Users\\sushant.temkar\\git\\YashTraining\\Reaources\\log4j.properties");  
+//	    Properties p=new Properties();  
+//	   
+//	    p.load(reader);  
+	    
+	    BasicConfigurator.configure();
 
 		JavaTraining jt = new JavaTraining();
 		jt.setChairNo(1);
